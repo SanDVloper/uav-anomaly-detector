@@ -74,7 +74,7 @@ def main():
         st.warning("Menunggu model dan scaler... Silakan jalankan `train_model.ipynb` terlebih dahulu.")
         st.stop()
         
-    st.sidebar.header("📁 Unggah File Log (.BIN)")
+    st.sidebar.header("Unggah File Log (.BIN)")
     uploaded_file = st.sidebar.file_uploader("", type=['bin', 'BIN'])
     
     if uploaded_file is not None:
@@ -105,7 +105,7 @@ def main():
         anomaly_count = df_results['Is_Anomaly'].sum()
         anomaly_percentage = (anomaly_count / total_rows) * 100 if total_rows > 0 else 0
         
-        st.markdown("### 📊 Ringkasan Sensor Fusion & Prediksi")
+        st.markdown("Ringkasan Sensor Fusion & Prediksi")
         col1, col2, col3 = st.columns(3)
         
         with col1:
@@ -120,7 +120,7 @@ def main():
         st.divider()
         
         # Visualisasi Time-Series IMU / ATT
-        st.markdown("### 📈 Visualisasi Time-Series: Deteksi Anomali Orientasi")
+        st.markdown("Visualisasi Time-Series: Deteksi Anomali Orientasi")
         
         y_axis_option = st.selectbox(
             "Pilih Parameter Sensor untuk Sumbu Y:", 
