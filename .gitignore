@@ -1,0 +1,15 @@
+# Mengabaikan folder environment dan sistem
+venv/
+__pycache__/
+.ipynb_checkpoints/
+.pytest_cache/
+
+# Mengabaikan file dataset berukuran raksasa yang tidak boleh di-push
+*.BIN
+*.csv
+datasetUAV/
+dataset_anomaly/
+
+# Mengabaikan file sistem tersembunyi
+.DS_Store
+*.log
